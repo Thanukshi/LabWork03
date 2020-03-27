@@ -15,5 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        msg1= findViewById(R.id.ET1_main);
+        send = findViewById(R.id.btn_main);
     }
 }
