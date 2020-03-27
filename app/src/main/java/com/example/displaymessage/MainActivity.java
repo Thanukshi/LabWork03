@@ -3,11 +3,13 @@ package com.example.displaymessage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText
+    EditText msg1;
+    Button send;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
