@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         msg1= findViewById(R.id.ET1_main);
         send = findViewById(R.id.btn_main);
 
-        Intent getMessage = new Intent(MainActivity.this,DisplaySctivity.class)
+        Intent getMessage = new Intent(MainActivity.this,DisplayActivity.class);
+        String name = msg1.getText().toString();
+        getMessage.putExtra("Text", name);
+        startActivity(getMessage);
     }
 }
