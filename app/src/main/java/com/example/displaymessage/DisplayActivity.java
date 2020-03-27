@@ -16,6 +16,7 @@ public class DisplayActivity extends AppCompatActivity {
 
         view = findViewById(R.id.textView);
         Intent received = getIntent();
-        String displayMessage = received.getStringExtra(MainActivity.Text);
+        String displayMessage = received.getStringExtra("TextMessage");
+        view.setText(displayMessage);
     }
 }
