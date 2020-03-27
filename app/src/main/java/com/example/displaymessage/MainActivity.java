@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent getMessage = new Intent(MainActivity.this,DisplayActivity.class);
         String name = msg1.getText().toString();
-        getMessage.putExtra("Text", name);
+        getMessage.putExtra("TextMessage",name);
         startActivity(getMessage);
 
     }
