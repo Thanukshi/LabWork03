@@ -6,32 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <EditText
+        android:id="@+id/ET1_main"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:layout_marginLeft="5dp"
-            android:id="@+id/ET1_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/hint"
-            android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="96dp"
+        android:layout_height="57dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_weight="1"
+        android:text="@string/btn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ET1_main"
+        app:layout_constraintStart_toEndOf="@+id/ET1_main"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/btn_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/btn"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
