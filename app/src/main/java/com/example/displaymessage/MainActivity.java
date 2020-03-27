@@ -10,7 +10,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String EXTRA_MESSAGE = "com.example.displaymessage.Message";
+    public static final String EXTRA_MESSAGE =  "com.example.displaymessage.Message";
+
     EditText msg1;
     Button send;
 
