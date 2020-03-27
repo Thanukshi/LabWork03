@@ -16,10 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         msg1= findViewById(R.id.ET1_main);
         send = findViewById(R.id.btn_main);
-
+        
         Intent getMessage = new Intent(MainActivity.this,DisplayActivity.class);
         String name = msg1.getText().toString();
         getMessage.putExtra("TextMessage",name);
