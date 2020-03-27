@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         String name = msg1.getText().toString();
         getMessage.putExtra("Text", name);
         startActivity(getMessage);
+
     }
 }
